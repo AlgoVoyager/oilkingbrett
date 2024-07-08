@@ -16,6 +16,10 @@
   background-position:100% 90%;
 
 }
+.heading{
+  background-image:url('https://i.postimg.cc/T2rGwn55/image.png') ;
+  background-size: cover;
+}
 /* .second {
   background-image: var(--bglandscape2);
   background-repeat: no-repeat;
@@ -23,6 +27,7 @@
   background-size:cover
 } */
 body{
+  @apply text-sky-900;
     background-image: var(--bgimg);
     background-position:100% 90%;
     background-size:cover;
@@ -79,7 +84,7 @@ and (max-width : 450px) {
 
     }
     .second{
-  background-position:90% 90%;
+  background-position:0% 90%;
 
     }
     #background-video {

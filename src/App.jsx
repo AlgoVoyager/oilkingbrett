@@ -30,7 +30,9 @@ function App() {
           </div>
           <div className='bg-sky-100 relative  bg-opacity-90 lg:w-1/3 w-[97%] text-justify rounded-t-3xl pt-2 '>
             <div className=''>
-              <h1 className='text-center text-3xl font-bold'>Oil King Brett </h1>
+              <h1 className='w-full heading lg:h-24 h-20'>
+              
+              </h1>
               
               <p className='p-3'>
               Oil king brett which is memecoin which will pump your wallet and make you rich.
@@ -42,7 +44,7 @@ function App() {
             <div className='w-full oildrip absolute h-2'></div>
           </div>
 
-          <div className='flex lg:flex-col flex-row gap-5 z-30'>
+          <div className='flex lg:flex-col flex-row gap-5 z-30 lg:p-0 py-10'>
             {/* <a href={dex} target="_blank" rel="noopener noreferrer">
               <img src={dexlogo} alt="dex" />
             </a> */}
@@ -62,8 +64,9 @@ function App() {
             {/* <div className='text-red-200 p-2 bg-dot-white bg-blue-700'>0xc9E9249Ec7E771b5801016a73364543472acC719</div> */}
             <div className='bg-sky-100 relative  bg-opacity-90 lg:w-1/3 w-[97%] text-justify rounded-t-3xl pt-2 '>
             <div className=''>
-              <h1 className='text-center text-3xl font-bold'>Oil King Brett </h1>
+            <h1 className='w-full heading lg:h-24 h-20'>
               
+              </h1>
               <p className='p-3'>
               One fateful night, Brett stumbled upon an ancient lamp and, in true Shrek-like fashion, found himself transformed into a Pepe. Now, as Oil King Brett, he embarks on a comical journey to reclaim his royal legacy, one meme at a time.
               </p>
@@ -75,6 +78,7 @@ function App() {
               Buy Now <img src="https://www.base.fun/images/logo_powered_by_dx.svg" className='w-28' alt="" />
             </a>
       <img src={logo} className='lg:w-72 w-44 lg:right-24 right-1 bottom-0 absolute ' alt="" />
+      
       </section>
     </>
   )
