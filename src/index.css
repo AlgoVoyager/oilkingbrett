@@ -1,0 +1,138 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+    --bgimg: url('https://i.postimg.cc/7PmycPgR/oildesertbg.jpg');
+    --bglandscape1: url('https://i.postimg.cc/7PmycPgR/oildesertbg.jpg');
+    --bglandscape2: url('https://i.postimg.cc/gc8xywQ3/phoneoildesertbg.jpg');
+}
+.main, .second{
+  background-image: var(--bglandscape1);
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position:100% 90%;
+
+}
+/* .second {
+  background-image: var(--bglandscape2);
+  background-repeat: no-repeat;
+  background-position:100% 90%;
+  background-size:cover
+} */
+body{
+    background-image: var(--bgimg);
+    background-position:100% 90%;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+
+}
+
+.pixelify-sans-trump {
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:normal;
+  font-style: normal;
+}
+
+.links img{
+    width: 80px;
+}
+.links img:hover{
+    opacity: 80%;
+    transform: scale(120%);
+    transition: all ease 0.2s;
+}
+
+.logo img{
+    width: 150px;
+}
+.oildrip{
+  background-image: url("https://i.postimg.cc/9QmQvgSm/image.png");
+  background-repeat: no-repeat;
+  background-size:contain;
+  height:100px;
+}
+.oildrip:hover{
+    transform-origin:center center ;
+    animation-name:drip; 
+    animation-duration:.5s;
+}
+@keyframes drip{
+    0%{transform:scale(1);}
+    50%{transform:scale(.9) translateY(-10px)}
+    100%{transform: scale(1);}
+}
+
+@media only screen 
+and (max-width : 450px) {
+    body{
+        background-image: var(--bgimg);
+        background-position:55% 80%;
+    
+    }
+    .main{
+  background-position:75% 100%;
+
+    }
+    .second{
+  background-position:90% 90%;
+
+    }
+    #background-video {
+      width: 100vw;
+      height: 100vh;
+      object-fit:cover;
+      position: absolute;
+      z-index: -1;
+   }
+    .bgvdo{
+      object-position: 13% 100%;
+     }
+    .links img{
+        width: 60px;
+    }
+        
+    .logo img{
+        width: 100px;
+    }
+}
+
+
+
+/* glowing effects */
+
+.neonText {
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #0fa,
+        0 0 82px #0fa,
+        0 0 92px #0fa,
+        0 0 102px #0fa,
+        0 0 151px #0fa;
+  }
+  .flick {
+    will-change: text-shadow;
+    animation: flicker 3s infinite alternate;
+  }
+  
+  /* Flickering animation */
+  @keyframes flicker {
+    0%, 50%, 100% {
+      text-shadow:
+        0 0 4px #fff,
+        0 0 10px #fff,
+        0 0 20px #0fa,
+        0 0 30px #0fa,
+        0 0 40px #0fa;
+    }
+    25%, 75% {
+      text-shadow: none;
+    }
+  }
