@@ -45,6 +45,7 @@ body{
 
 .links img{
     width: 80px;
+    @apply shadow-lg shadow-orange-300
 }
 .links img:hover{
     opacity: 80%;

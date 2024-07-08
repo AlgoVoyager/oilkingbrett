@@ -3,7 +3,7 @@ import { useState } from 'react'
 function App() {
   const logo ="https://i.postimg.cc/Rh4zzc2K/logo-12.png"
   const banner= "https://i.postimg.cc/tTMpF1cx/image.png"
-  const buyLink = "https://www.base.fun/"
+  const buyLink = "https://www.base.fun/0xa975C0300424BA67a537B6a521a490fD86F3aa84?affiliate=0xC6a2BFAe4AF0Ad6CF2B3247b97E85dE05BcdE80a"
   const telegram = "https://t.me/oilkingbrett"
   const teleIcon="https://i.postimg.cc/t42KL5ZW/image.png"
   const x = "https://x.com/OilKingBrett"
@@ -12,6 +12,7 @@ function App() {
   const dexlogo = "https://cdn.worldvectorlogo.com/logos/dextools.svg"
   const oilpump = "https://i.postimg.cc/MZ5XZSSk/image.png"
   const oildrip = "https://i.postimg.cc/9QmQvgSm/image.png"
+  const oildrip2 = "https://i.postimg.cc/zGN0KzY0/image.png"
   return (
     <>
       <main className='min-w-full min-h-screen  main font-serif'>
@@ -20,13 +21,11 @@ function App() {
             <img src={logo} alt='logo' className=" z-[5] w-80 lg:w-auto  mx-auto" />
         </div>
         {/* social links */}
-        <div className='links lg:mt-0 mt-5 w-full flex lg:flex-row flex-col items-center justify-around gap-2'>
-          <div className='border-4 bg-blue- bg-transparent border-blue- lg:mt-0 mt-5'>
-            {/* <a href={buyLink} target="_blank"
-              className='bg-yellow-100  px-4 py-3 duration-200 hover:text-red-500 lg:text-3xl text-2xl hover:opacity-90 hover:bg-yellow-200 rounded-sm border-2 border-t-4 border-t-white border-b-white border-b-4 border-red-400 text-center font-bold'>
+        <div className='links lg:mt-0 mt-2 w-full flex lg:flex-row flex-col items-center justify-around gap-3'>
+          <div className=' lg:mt-0 mt-5  hover:scale-125 duration-100'>
+           <a href={buyLink} target="_blank" rel="noopener noreferrer" className='text-sky-100 shadow-lg shadow-orange-400 bg-orange-400 hover:bg-orange-500 text-2xl lg:text-3xl font-bold py-2 px-4 border-black rounded-3xl'>
               Buy
-            </a> */}
-            
+            </a>
           </div>
           <div className='bg-sky-100 relative  bg-opacity-90 lg:w-1/3 w-[97%] text-justify rounded-t-3xl pt-2 '>
             <div className=''>
@@ -58,10 +57,10 @@ function App() {
         </div>
       </main>
       {/* <img src={oildrip} className='w-full h-28 object-cover bg-repeat-x' alt="" /> */}
-      <section className=" bg-[https://i.postimg.cc/4y28nZmK/image.png] second h-screen flex flex-col gap-5 items-center justify-center  w-full   relative ">
+      <section className="font-serif bg-[https://i.postimg.cc/4y28nZmK/image.png] second h-screen flex flex-col gap-14 items-center justify-center  w-full   relative ">
       <img src={"https://i.postimg.cc/Y2ns39Fq/image.png"} className='w-full  left-0 z-20 lg:-top-8 -top-4 absolute ' alt="" />
        
-            {/* <div className='text-red-200 p-2 bg-dot-white bg-blue-700'>0xc9E9249Ec7E771b5801016a73364543472acC719</div> */}
+            <div className='text-orange-900 z-50 shadow-lg shadow-orange-300  p-2 bg-dot-orange-100 rounded-full bg-orange-300'>0xa975C0300424BA67a537B6a521a490fD86F3aa84</div>
             <div className='bg-sky-100 relative  bg-opacity-90 lg:w-1/3 w-[97%] text-justify rounded-t-3xl pt-2 '>
             <div className=''>
             <h1 className='w-full heading lg:h-24 h-20'>
@@ -73,11 +72,14 @@ function App() {
             </div>
             <div className='w-full oildrip absolute h-2'></div>
           </div>
-            <a href={buyLink} target="_blank"
-              className='bg-indigo-500 hidden text-red-200 z-50 bg-grid-small-red-500 mx-auto mt-5 w-fit block px-4 py-3 duration-200 hover:text-red-500 hover:scale-150 scale-125 lg:text-2xl hover:opacity-90 hover:bg-yellow-100 rounded text-center font-bold'>
-              Buy Now <img src="https://www.base.fun/images/logo_powered_by_dx.svg" className='w-28' alt="" />
-            </a>
-      <img src={logo} className='lg:w-72 w-44 lg:right-24 right-1 bottom-0 absolute ' alt="" />
+            <div className='relative '>
+              <a href={buyLink} target="_blank"
+                className='bg-orange-400  text-sky-300 z-50  mx-auto mt-5 w-fit block px-2 py-1  duration-200 hover:text-red-500 hover:scale-150 scale-125 lg:text-2xl text-xl hover:opacity-90 hover:bg-yellow-100 rounded text-center font-bold'>
+                Buy Now <img src="https://www.base.fun/images/logo_powered_by_dx.svg" className='w-28' alt="" />
+              </a>
+                <img src={oildrip2} className='w-32' alt="" />
+            </div>
+            <img src={logo} className='lg:w-72 w-44 lg:right-24 right-1 bottom-0 absolute ' alt="" />
       
       </section>
     </>
